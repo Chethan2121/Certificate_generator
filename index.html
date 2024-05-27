@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpeg.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Certificate Generator</h1>
+        <form id="certificate-form">
+            <label for="recipient-name">Recipient Name:</label>
+            <input type="text" id="recipient-name" required>
+            
+            <label for="event-name">Event/Course Name:</label>
+            <input type="text" id="event-name" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" rows="4" required></textarea>
+            
+            <label for="template">Choose Template:</label>
+            <select id="template" required>
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+                <option value="template3">Template 3</option>
+            </select>
+            
+            <button type="submit">Generate Certificate</button>
+        </form>
+        <div id="certificate-preview" class="certificate-preview" style="display:none;">
+            <div id="certificate">
+                <h2>Certificate of Achievement</h2>
+                <p>This is to certify that</p>
+                <h1 id="cert-recipient-name">Recipient Name</h1>
+                <p>has successfully completed the</p>
+                <h3 id="cert-event-name">Event/Course Name</h3>
+                <p id="cert-description">Description</p>
+                <p id="cert-date">Date</p>
+            </div>
+            <button id="download-btn">Download Certificate</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

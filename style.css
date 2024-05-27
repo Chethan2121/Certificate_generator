@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.certificate-preview {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#certificate {
+    position: relative;
+    border: 2px solid #333;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#certificate h2 {
+    font-size: 30px;
+    text-shadow: 2px 0px 5px rgb(53, 49, 49);
+}
+
+#certificate h1 {
+    font-size: 24px;
+}
+
+#certificate h3 {
+    font-size: 18px;
+}
+
+#certificate p {
+    font-size: 16px;
+}
+
+#certificate h2, #certificate h1, #certificate h3, #certificate p {
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 0 5px;
+    color: #000;  /* Set text color to black */
+}
+
+#certificate #cert-description {
+    width: 70%;  /* Set description box width to 70% */
+    text-align: center;
+    word-wrap: break-word;  /* Ensure text wraps within the box */
+}
+
+#download-btn {
+    margin-top: 20px;
+}
+
+.template1 {
+    background-image: url('template1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.template2 {
+    background-image: url('template2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.template3 {
+    background-image: url('template3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
